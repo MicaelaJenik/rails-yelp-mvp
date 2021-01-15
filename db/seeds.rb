@@ -4,6 +4,8 @@
 # movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 # Character.create(name: 'Luke', movie: movies.first)
 
+Restaurant.destroy_all
+
 puts "Creating restaurants"
 restaurants = Restaurant.create([{ name: 'Le Bon Saint Pourcain', address:
 '10bis Rue Servandoni', category: 'french', phone_number: '1234' }, { name: 'Chez Janou', address:

@@ -1,1 +1,14 @@
-<h1>Please input information for the new restaurant</h1>
+<div class="container">
+
+  <h1>Please input information for the new restaurant</h1>
+    <div class="card">
+    <%= simple_form_for [ @restaurant ] do |f| %>
+      <h2><%= f.input :name %></h2>
+      <h2><%= f.input :address %></h2>
+      <h2><%= f.input :phone_number %></h2>
+      <h2><%= f.input :category %></h2>
+      <%= f.submit "Submit restaurant", class: "btn btn-primary" %>
+    </div>
+    <% end %>
+
+</div>
